@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.table {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.addLabel{
+  display: inline-block;
+  clear: left;
+  width: 250px;
+  text-align: right;
+}
+
+.addInput{
+  width:180px;
+}
