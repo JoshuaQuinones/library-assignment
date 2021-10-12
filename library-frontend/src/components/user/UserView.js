@@ -78,7 +78,6 @@ const UserView = () => {
             else {
                 getBookQuery(query, false)
             }
-            setQuery('');
         }
     }
 
@@ -91,6 +90,7 @@ const UserView = () => {
         <div>
             <hr/>
             <h1>Welcome to the User View</h1>
+            <p>(Leave empty to display all books)</p>
             <form onSubmit={submitFuncSearch}> 
                 <input type="text" name="userQuery" value={query} onChange={(e) => setQuery(e.target.value)}></input>
                 <input type="submit" value="Search"/>

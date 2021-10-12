@@ -78,7 +78,6 @@ const EmpView = () => {
             else {
                 getBookQuery(query, false)
             }
-            setQuery('');
         }
     }
 

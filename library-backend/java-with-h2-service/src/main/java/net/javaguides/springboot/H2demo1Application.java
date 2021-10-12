@@ -21,9 +21,14 @@ public class H2demo1Application {
 	@Bean
 	CommandLineRunner runner(LibraryBookRepository repository) {
 		return args -> {
-			repository.save(new LibraryBook("Book1", "Author1", "Date1"));
-			repository.save(new LibraryBook("Book2", "Author2", "Date2"));
-			repository.save(new LibraryBook("Book3", "Author2", "Date3"));
+			repository.save(new LibraryBook("1984", "George Orwell", "1949-6-8"));
+			repository.save(new LibraryBook("A Game of Thrones", "George R.R. Martin", "1996-8-1"));
+			repository.save(new LibraryBook("The Cat In The Hat", "Dr. Seuss", "1957-3-12"));
+			repository.save(new LibraryBook("A Clockwork Orange", "Anthony Burgess", "1962"));
+			repository.save(new LibraryBook("The Invisible Man", "H.G. Wells", "1897"));
+			repository.save(new LibraryBook("Fahrenheit 451", "Ray Bradbury", "1953-10-19"));
+			repository.save(new LibraryBook("The Great Gatsby", "F. Scott Fitzgerald", "1925-4-10"));
+			repository.save(new LibraryBook("Catch-22", "Joseph Heller", "1961-11-10"));
 		};
 	}
 }
